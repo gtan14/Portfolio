@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Gerald Tan's portfolio</title>
+<meta charset="utf-8">
+<link href='https://fonts.googleapis.com/css?family=Assistant' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+
+html, body{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#welcome{
+	opacity: 0;
+	position: fixed;
+	border-style: solid;
+	border-width: 5px;
+	font-family: 'Assistant';
+	top: 50%;
+	left: 50%;
+	font-size: 100px;
+	transform: translate(-50%, -50%);
+	-webkit-animation: welcomeFadeIn 5s;
+	animation: welcomeFadeIn 5s;
+	-webkit-animation-delay: 1.5s;
+	animation-delay: 1.5s;
+	z-index: 1;
+}
+
+
+@keyframes welcomeFadeIn{
+	0% { opacity: 0; }
+	50% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+#bg{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index:-1;
+}
+
+#afterWelcome{
+	opacity: 0;
+	font-size: 50px;
+	width: 100%;
+	height: 100%;
+	top: 40%;
+	left: 50%;
+	position: relative;
+	transform: translate(-50%, -50%);
+	-webkit-animation: geraldFadeIn 5s;
+	animation: geraldFadeIn 5s;
+	-webkit-animation-delay: 6.5s;
+	animation-delay: 6.5s;
+	animation-fill-mode:forwards;
+	z-index:1;
+	}
+
+@keyframes geraldFadeIn{
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+#name{
+	position:absolute;
+	left: 40%;
+	bottom: 45%;
+	text-algin: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	max-width: 500px;
+	padding: 10 0;
+	margin-bottom: 0px;
+	font-family: "Exo";
+}
+
+#hobbies{
+	position: absolute;
+	font-size: 20px;
+	left: 29%;
+	top: 55%;
+	font-family: "Exo";
+	
+}
+
+/*#learnMore{
+	font-size: 30px;
+	position: absolute;
+	top: 80%;
+	left: 35%;
+}*/
+
+a:link, a:visited, a:active{
+	text-decoration: none;
+}
+
+a:hover{
+	color:#4169E1;
+	text-decoration: none;
+}
+
+.imgCircle{
+	border-radius: 50%;
+}
+
+#pic{
+	position: absolute;
+	left: 40%;
+	top: 12%;
+}
+
+a{
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 44%;
+	bottom: 30%;
+}
+
+
+</style>
+</head>
+<body>
+<div id="bg"><img src="https://scontent-dft4-2.xx.fbcdn.net/v/t31.0-8/15625881_10154253218868129_7810358833994863606_o.jpg?oh=3cda1bf9acf18ecaaa50963f83e1661c&oe=592AE875" width="100%" height="100%"></div>
+	<div id="welcome" class="container-fluid">
+		<p>Welcome</p>
+	</div>
+	<div id="afterWelcome" class="container-fluid">
+	<div>
+		<p id="name" >Gerald Tan</p>
+		<p id="hobbies"><strong>Web Development | Coding | Photography | Videography</strong></p>
+	</div>
+	<div id="pic"><img class="imgCircle" src="https://scontent-dft4-2.xx.fbcdn.net/v/t31.0-8/10649042_10152453297948129_1719415374111313048_o.jpg?oh=9951db219473912f4cf23135a1d9fcfc&oe=592F79FE" width="200" height="200"></div>
+	<div>
+		<a class="btn btn-primary" href="about.html">Learn More</a>
+	</div>
+</div>
+</body>
+</html>

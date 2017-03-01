@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Gerald Tan's portfolio</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Assistant' rel='stylesheet'>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+
+html, body{
+	max-width: 100%;
+	overflow-x: hidden;
+	height: 100%;
+}
+
+
+body{
+	padding: 0;
+	margin: 0;
+}
+
+ul.menu{
+	position: absolute;
+	right: 0;
+	list-style-type: none;
+	margin: 0 2%;
+	padding: 0;
+	overflow: hidden;
+}
+
+ul.menu li{
+	float: left;
+}
+
+ul.menu li a{
+	display: inline-block;
+	text-decoration: none;
+	font-size: 20px;
+	margin: 14px 16px;
+	text-align: center;
+	color: black;
+}
+
+ul.menu li a:hover{
+	font-weight: bold;
+	border-bottom: 1px solid #00CED1;
+	padding-bottom: 3px;
+}
+
+#menulayout{
+	position: relative;
+	height: 10%;
+	width: 100%;
+	border-bottom: 1px solid black;
+	padding: 0;
+	margin: 0;
+}
+
+#contact{
+	font-size: 45px;
+	margin: 2%;
+}
+
+#emaillayout{
+	position: absolute;
+	margin: 2%;
+	width: 100%;
+	height: 100%;
+}
+
+textarea[name=message]{
+	width: 50%;
+	height: 150px;
+}
+
+#phone{
+	font-size: 20px;
+	margin: 2%;
+}
+
+#emailaddress{
+	font-size: 20px;
+	margin: 2%;
+}
+
+#welcome{
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 20px;
+	margin: 14px 16px;
+	text-align: center;
+	color: black;
+}
+
+#welcome:hover{
+	font-weight: bold;
+	border-bottom: 1px solid #00CED1;
+	padding-bottom: 3px;
+}
+
+
+</style>
+</head>
+<body>
+<div class="container" id="menulayout">
+<ul class="menu" id="navmenu">
+	<li><a href="about.html">About</a></li>
+	<li><a href="portfolio.html">Portfolio</a></li>
+	<li><a href="photos.html">Photos</a></li>
+	<li><a href="videos.html">Videos</a></li>
+	<li><a href="contact.html">Contact</a></li>
+</ul>
+<a id="welcome" href="index.html">Welcome</a>
+</div>
+<p id="contact">Contact</p>
+<p id="phone">Phone: 470-554-4720</p>
+<p id="emailaddress">Email: gtan14@gmail.com</p>
+<div id="emaillayout">
+<form action="contact.php" method="post" enctype="text/plain">
+Name:<br>
+<input type="text" name="sender"><br>
+E-mail:<br>
+<input type="text" name="senderEmail"><br>
+Message:<br>
+<textarea name="message"></textarea><br><br>
+<input type="submit" value="Send">
+</form>
+</div>
+</body>
+</html>
