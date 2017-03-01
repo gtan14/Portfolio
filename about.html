@@ -16,6 +16,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <style>
 
+	/*Sets no sideways scrolling and dimensions for html and body*/
 html, body{
 	max-width: 100%;
 	overflow-x: hidden;
@@ -28,6 +29,7 @@ body{
 	margin: 0;
 }
 
+	/*Positions and styles the nav menu*/
 ul.menu{
 	position: absolute;
 	right: 0;
@@ -41,6 +43,7 @@ ul.menu li{
 	float: left;
 }
 
+	/*Styles each link of the nav menu*/
 ul.menu li a{
 	display: inline-block;
 	text-decoration: none;
@@ -50,12 +53,14 @@ ul.menu li a{
 	color: black;
 }
 
+	/*Links change color and produces a bottom border when mouse hovers over links in nav menu*/
 ul.menu li a:hover{
 	font-weight: bold;
 	border-bottom: 1px solid #00CED1;
 	padding-bottom: 3px;
 }
 
+	/*Produces the black line that separates the nav menu and the rest of the page*/
 #menulayout{
 	position: relative;
 	height: 10%;
@@ -65,6 +70,7 @@ ul.menu li a:hover{
 	margin: 0;
 }
 
+	/*Sets positioning of the about portion of the page*/
 #about{
 	position: absolute;
 	padding: 0;
@@ -123,11 +129,13 @@ div.middle{
 	font-family: Assistant;
 }
 
+	/*Dimensions for the picture*/
 #mepic{
 	width: 500px;
 	height: 350px;
 }
 
+	/*Positioning the "home" button to upper left hand corner*/
 #welcome{
 	position: absolute;
 	left: 0;
@@ -140,6 +148,7 @@ div.middle{
 	color: black;
 }
 
+	/*"Home" button changes color and produces a bottom border when mouse is hovered over*/
 #welcome:hover{
 	font-weight: bold;
 	border-bottom: 1px solid #00CED1;
