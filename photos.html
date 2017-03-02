@@ -4,7 +4,10 @@
 <title>Gerald Tan's portfolio</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="portfolio.css">
 <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Assistant' rel='stylesheet'>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -17,145 +20,117 @@
 <style>
 
 html, body{
-	max-width: 100%;
-	overflow-x: hidden;
+	width: 100%;
+	overflow-x:hidden;
 	height: 100%;
 }
 
-
 body{
+	height: 100%;
 	padding: 0;
 	margin: 0;
 }
 
-ul.menu{
-	position: absolute;
-	right: 0;
-	top: 0;
-	list-style-type: none;
-	margin: 0 2%;
-	padding: 0;
-	overflow: hidden;
-}
-
-ul.menu li{
-	float: left;
-}
-
-ul.menu li a{
-	display: inline-block;
-	text-decoration: none;
-	font-size: 20px;
-	margin: 14px 16px;
-	text-align: center;
-	color: black;
-}
-
-ul.menu li a:hover{
-	font-weight: bold;
-	border-bottom: 1px solid #00CED1;
-	padding-bottom: 3px;
-}
-
-#menulayout{
-	position: relative;
-	height: 10%;
-	width: 100%;
-	border-bottom: 1px solid black;
-	padding: 0;
-	margin: 0;
+.thumbnail img{
+	border: 3px groove #4E5A66;
+	min-height: 100%;
+	max-width: 100%;
 }
 
 .thumbnail{
-	border: .25%;
-	box-shadow: 0;
-	border-radius: .25%;
+	box-shadow: none;
+	border: 0;
 }
 
+
+	/*Positions the first picture*/
 #first{
 	position: absolute;
 	padding: 0;
 	margin: 1%;
 	left: 0;
 	top: 0;
-	max-height: 70%;
-	max-width: 30%;
+	height: 70%;
+	width: 30%;
 }
 
+	/*Positions the second picture*/
 #second{
 	position: absolute;
 	left: 30.25%;
 	padding: 0;
 	margin: 1%;
-	max-height: 50%;
-	max-width: 40%;
+	height: 40%;
+	width: 40%;
 }
 
+	/*Positions the third picture*/
 #third{
 	position: absolute;
-	top: 45%;
+	top: 46%;
 	left: 30.25%;
 	padding: 0;
 	margin: 1%;
-	max-height: 50%;
-	max-width: 40%;
+	height: 50%;
+	width: 40%;
 }
 
+	/*Positions the fourth picture*/
 #fourth{
 	position: absolute;
 	left: 70.50%;
 	padding: 0;
 	margin: 1%;
-	max-height: 50%;
-	max-width: 28%;
+	height: 60%;
+	width: 28%;
 }
 
+	/*Positions the fifth picture*/
 #fifth{
 	position: absolute;
-	top: 97.25%;
+	top: 99%;
 	left: 30.25%;
 	padding: 0;
 	margin: 1%;
-	max-height: 50%;
-	max-width: 40%;
+	height: 50%;
+	width: 40%;
 }
 
+	/*Positions the sixth picture*/
 #sixth{
 	position: absolute;
-	top: 82%;
+	top: 83%;
 	left: 0;
 	margin: 1%;
+	padding: 0 0 2% 0;
+	height: 100%;
+	width: 30%;
+}
+
+	/*Positions the seventh picture*/
+#seventh{
+	position: absolute;
+	top: 76%;
+	left: 70.50%;
 	padding: 0;
-	max-height: 75%;
-	max-width: 30%;
+	margin: 1%;
+	height: 75%;
+	width: 28%;
 }
 
 #piclayout{
-	position: absolute;
-	margin: 0 0 1% 0;
+	position: relative;
+	margin: 0;
 	padding: 0;
-	overflow: auto;
 	width: 100%;
-	height: 100%;
+	min-height: 100vh;
 }
 
-#welcome{
-	position: absolute;
-	left: 0;
-	top: 0;
-	display: inline-block;
-	text-decoration: none;
-	font-size: 20px;
-	margin: 14px 16px;
-	text-align: center;
-	color: black;
+ul li a{
+	font-family: Open sans;
 }
 
-#welcome:hover{
-	font-weight: bold;
-	border-bottom: 1px solid #00CED1;
-	padding-bottom: 3px;
-}
+
 </style>
 </head>
 <body>
@@ -167,7 +142,7 @@ ul.menu li a:hover{
 	<li><a href="videos.html">Videos</a></li>
 	<li><a href="contact.html">Contact</a></li>
 </ul>
-<a id="welcome" href="index.html">Welcome</a>
+<a id="welcome" href="index.html" style="font-family: Exo;">Home</a>
 </div>
 <div class="container" id="piclayout">
 	<div class="thumbnail" id="first">
@@ -200,30 +175,11 @@ ul.menu li a:hover{
 			<img src ="https://scontent-ord1-1.xx.fbcdn.net/v/t1.0-9/13537804_10153796171818129_5172665181875682048_n.jpg?oh=a0727b7e77cce54c8b4a1232b8648ea4&oe=5941AE37">
 		</a>
 	</div>
-	<!--<div class="row">
-		<div class="col-md-4" style="padding: 0">
-			<div class="thumbnail">
-				<a href="https://scontent-atl3-1.xx.fbcdn.net/v/t31.0-8/p843x403/16819173_10154438635763129_2804930121177437470_o.jpg?oh=37e02efe6d3a0ad50a460ef1f533646b&oe=593913E7" target="_blank">
-					<img src="https://scontent-atl3-1.xx.fbcdn.net/v/t31.0-8/p843x403/16819173_10154438635763129_2804930121177437470_o.jpg?oh=37e02efe6d3a0ad50a460ef1f533646b&oe=593913E7">
-				</a>
-			</div>
-		</div>
-		<div class="col-md-4" style="padding: 0">
-			<div class="thumbnail">
-				<a href="https://scontent-atl3-1.xx.fbcdn.net/v/t31.0-0/p552x414/15844857_10154303154558129_4627754033146325459_o.jpg?oh=504e6f4f72195943e12098005be0a1de&oe=594511FD" target="_blank">
-					<img src="https://scontent-atl3-1.xx.fbcdn.net/v/t31.0-0/p552x414/15844857_10154303154558129_4627754033146325459_o.jpg?oh=504e6f4f72195943e12098005be0a1de&oe=594511FD">
-				</a>
-			</div>
-		</div>
-		<div class="col-md-4" style="padding: 0">
-			<div class="thumbnail">
-				<a href="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/16195723_10154370628998129_5913833072364494705_n.jpg?oh=6188cc26a12c2dc969e431aa5567103a&oe=593AE0EE" target="_blank">
-					<img src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/16195723_10154370628998129_5913833072364494705_n.jpg?oh=6188cc26a12c2dc969e431aa5567103a&oe=593AE0EE">
-				</a>
-			</div>
-		</div>-->
+	<div class="thumbnail" id="seventh">
+		<a href="https://scontent-atl3-1.xx.fbcdn.net/v/t31.0-8/p843x403/17097287_10154460363508129_3387525707810835_o.jpg?oh=330a485b556c64fdec33e3c87d0d9306&oe=592A6768" target="_blank">
+			<img src ="https://scontent-atl3-1.xx.fbcdn.net/v/t31.0-8/p843x403/17097287_10154460363508129_3387525707810835_o.jpg?oh=330a485b556c64fdec33e3c87d0d9306&oe=592A6768">
+		</a>
 	</div>
-	
-</div>
+	</div>
 </body>
 </html>
