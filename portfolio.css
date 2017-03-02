@@ -1,0 +1,61 @@
+	/*Positions and styles the nav menu*/
+ul.menu{
+	position: absolute;
+	right: 0;
+	list-style-type: none;
+	margin: 0 2%;
+	padding: 0;
+	/*overflow: hidden;*/
+}
+
+ul.menu li{
+	float: left;
+}
+
+	/*Styles each link of the nav menu*/
+ul.menu li a{
+	display: inline-block;
+	text-decoration: none;
+	font-size: 20px;
+	margin: 14px 16px;
+	text-align: center;
+	color: black;
+}
+
+	/*Links change color and produces a bottom border when mouse hovers over links in nav menu*/
+ul.menu li a:hover{
+	font-weight: bold;
+	border-bottom: 1px solid #00CED1;
+	padding-bottom: 3px;
+}
+
+	/*Produces the black line that separates the nav menu and the rest of the page*/
+#menulayout{
+	position: relative;
+	height: 10%;
+	width: 100%;
+	border-bottom: 1px solid black;
+	padding: 0;
+	margin: 0;
+}
+
+	/*Positioning the "home" button to upper left hand corner*/
+#welcome{
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 30px;
+	margin: 5px 16px;
+	text-align: center;
+	color: black;
+	font-family: Raleway;
+}
+
+	/*"Home" button changes color and produces a bottom border when mouse is hovered over*/
+#welcome:hover{
+	font-weight: bold;
+	border-bottom: 1px solid #00CED1;
+	padding-bottom: 3px;
+}
