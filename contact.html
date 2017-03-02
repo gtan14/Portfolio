@@ -4,7 +4,10 @@
 <title>Gerald Tan's portfolio</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="portfolio.css">
 <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Exo' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Assistant' rel='stylesheet'>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -15,101 +18,72 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <style>
-
 html, body{
-	max-width: 100%;
-	overflow-x: hidden;
-	height: 100%;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  overflow-x: hidden;
 }
-
-
+html{
+  height: 100%;
+}
 body{
-	padding: 0;
-	margin: 0;
+  min-height: 100%;
 }
 
-ul.menu{
-	position: absolute;
-	right: 0;
-	list-style-type: none;
-	margin: 0 2%;
-	padding: 0;
-	overflow: hidden;
-}
-
-ul.menu li{
-	float: left;
-}
-
-ul.menu li a{
-	display: inline-block;
-	text-decoration: none;
-	font-size: 20px;
-	margin: 14px 16px;
-	text-align: center;
-	color: black;
-}
-
-ul.menu li a:hover{
-	font-weight: bold;
-	border-bottom: 1px solid #00CED1;
-	padding-bottom: 3px;
-}
-
-#menulayout{
-	position: relative;
-	height: 10%;
-	width: 100%;
-	border-bottom: 1px solid black;
-	padding: 0;
-	margin: 0;
-}
-
+	/*Contact header style*/
 #contact{
-	font-size: 45px;
-	margin: 2%;
+	font-size: 55px;
+	color: white;
+	font-family: Raleway;
+	font-weight: 700;
+	padding: 2%;
 }
 
+	/*Layout for the email form*/
 #emaillayout{
-	position: absolute;
-	margin: 2%;
+	position: relative;
+	padding: 2%;
 	width: 100%;
-	height: 100%;
+	min-height: 100%;
 }
 
+	/*Specifies the dimensions for the message box*/
 textarea[name=message]{
 	width: 50%;
 	height: 150px;
 }
 
+	/*Phone number style*/
 #phone{
 	font-size: 20px;
+	font-family: Raleway;
+	color: white;
 	margin: 2%;
 }
 
+	/*Email address style*/
 #emailaddress{
+	font-family: Raleway;
+	color: white;
 	font-size: 20px;
 	margin: 2%;
 }
 
-#welcome{
-	position: absolute;
-	left: 0;
-	top: 0;
-	display: inline-block;
-	text-decoration: none;
-	font-size: 20px;
-	margin: 14px 16px;
-	text-align: center;
-	color: black;
+#wrapper{
+	width: 100%;
+	min-height: 100vh;
+	background-color: #4E5A66;
 }
 
-#welcome:hover{
-	font-weight: bold;
-	border-bottom: 1px solid #00CED1;
-	padding-bottom: 3px;
+.emailFormText{
+	color:white;
+	font-family:Raleway;
 }
 
+ul li a{
+	font-family: Open sans;
+}
 
 </style>
 </head>
@@ -122,21 +96,26 @@ textarea[name=message]{
 	<li><a href="videos.html">Videos</a></li>
 	<li><a href="contact.html">Contact</a></li>
 </ul>
-<a id="welcome" href="index.html">Welcome</a>
+<a id="welcome" href="index.html" style="font-family: Exo;">Home</a>
 </div>
+<div id="wrapper">
 <p id="contact">Contact</p>
 <p id="phone">Phone: 470-554-4720</p>
 <p id="emailaddress">Email: gtan14@gmail.com</p>
 <div id="emaillayout">
+<!--Uses formspree as an email form since website is static-->
 <form id="contactform" action="https://formspree.io/gtan14@gmail.com" method="POST">
-	<p>Name:</p>
+	<p class="emailFormText">Name:</p>
 <input type="text" name="name">
-	<p>E-mail:</p>
+<br><br>
+	<p class="emailFormText">E-mail:</p>
 <input type="text" name="_replyto">
-	<p>Message:</p>
+<br><br>
+	<p class="emailFormText">Message:</p>
 <textarea name="message"></textarea><br><br>
 <input type="submit" value="Send">
 </form>
+</div>
 </div>
 </body>
 </html>
